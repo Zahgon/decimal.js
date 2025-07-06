@@ -1,0 +1,22 @@
+[package]
+name = "decimal"
+version = "10.6.0"
+edition = "2021"
+description = "An arbitrary-precision Decimal type: a Rust port of decimal.js, with the decimal command"
+license = "MIT"
+repository = "https://github.com/MikeMcl/decimal.js"
+readme = "README.md"
+keywords = ["arbitrary", "precision", "decimal", "bigdecimal", "bignumber"]
+
+[lib]
+name = "decimal"
+path = "src/lib.rs"
+
+[[bin]]
+name = "decimal"
+path = "src/main.rs"
+
+[dependencies]
+
+[profile.release]
+opt-level = 3
